@@ -15,14 +15,14 @@
         <div class="menu">
             <nav>
                 <ul>
-                    <li class="menu-item"><a href="index.html">Home</a></li>
-                    <li class="menu-item"><a href="decimalToBinary.html">Decimal para Binário</a></li>
-                    <li class="menu-item"><a href="binaryToDecimal.html">Binário para Decimal</a></li>
+                    <li class="menu-item">
+                        <img src="devlord - coroa sem fundo.png" alt="Logo Devlord">
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
-    <div class="main-content">
+    <div class="main-content BTD">
         <div class="Intro">
             <h1>Conversor de Binário para Decimal</h1>
             <p>Insira um número binário e clique em converter para ver o resultado.</p>
@@ -30,17 +30,35 @@
         <div class="Converter">
             <form action="index.html" method="post">
                 <input type="text" name="binary" id="binary" placeholder="Insira um número binário">
-                <input type="button" value="Converter" onclick="converter()">
+                <input type="button" value="Converter" onclick="converter_BTD()">
             </form>
         </div>
         <div class="Resultado">
             <h2>Resultado</h2>
-            <div id="result"></div>
+            <div id="binaryResult"></div>
         </div>
     </div>
+
+    <div class="main-content DTB"> 
+        <div class="Intro">
+            <h1>Conversor de Decimal para Binário</h1>
+            <p>Insira um número decimal e clique em converter para ver o resultado.</p>
+        </div>
+        <div class="Converter">
+            <form action="index.html" method="post">
+                <input type="text" name="decimal" id="decimal" placeholder="Insira um número decimal">
+                <input type="button" value="Converter" onclick="converter_DTB()">
+            </form>
+    </div>
+        <div class="Resultado">
+            <h2>Resultado</h2>
+            <div id="decimalResult"></div>
+        </div>
+    </div>
+
     <footer>
         <div class="footer">
-            <p>Desenvolvido por <a href="">NICOLAS</a></p>
+            <p>Desenvolvido por <a href="">Nicolas Nobre, The Devlord.</a></p>
     </footer>
 </body>
 </html>

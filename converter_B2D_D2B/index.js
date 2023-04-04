@@ -1,7 +1,9 @@
-let binary = document.getElementById('binary');
-let result = document.getElementById('result');
+let binary        = document.getElementById('binary');
+let decimal       = document.getElementById('decimal');
+let binaryResult  = document.getElementById('binaryResult');
+let decimalResult = document.getElementById('decimalResult');
 
-function converter() {
+function converter_BTD() {
     if (binary.value.length > 8) {
         alert('Insira um número binário de 8 bits!');
         return;
@@ -19,8 +21,20 @@ function converter() {
         }
     }
 
-    let decimal = parseInt(binary.value, 2);
+    let BTD_converted = parseInt(binary.value, 2);
 
-    res = `<p>O número binário ${binary.value} em decimal é ${decimal}</p>`
-    result.innerHTML = res;
+    res_BTD = `<p>O número binário ${binary.value} em decimal é ${BTD_converted}</p>`
+    binaryResult.innerHTML = res_BTD;
 };
+
+function converter_DTB() {
+    if (decimal.value == '') {
+        alert('Insira um número decimal!');
+        return;
+    }
+
+    let DTB_converted = (decimal.value >>> 0).toString(2);
+
+    res_DTB = `<p>O número decimal ${decimal.value} em binário é ${DTB_converted}</p>`
+    decimalResult.innerHTML = res_DTB;
+}

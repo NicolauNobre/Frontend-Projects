@@ -8,6 +8,10 @@ body{
     padding: 0;
     min-height: 100%;
 }
+img{
+    width: 100px;
+    height: 100px;
+}
 .menu{
     background-color: #264248;
     color: #fff;
